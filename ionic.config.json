@@ -1,0 +1,8 @@
+{
+  "name": "essencias-app",
+  "app_id": "cc35514b",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

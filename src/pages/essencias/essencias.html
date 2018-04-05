@@ -1,0 +1,28 @@
+<!--
+  Generated template for the EssenciasPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Favoritas</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      {{essencias.type}}
+    </ion-card-header>
+    <ion-list>
+        <button ion-item (click)="infoEssence($event, t)">
+            <ion-icon name="cart" item-start ></ion-icon>
+            {{essencias.color}}
+          </button>
+    </ion-list>
+  </ion-card>
+</ion-content>
