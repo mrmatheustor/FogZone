@@ -11,6 +11,8 @@ import { AddEssenciaPage } from '../pages/add-essencia/add-essencia';
 import { BdEssenciaPage } from '../pages/bd-essencia/bd-essencia';
 import { BdAddEssenciaPage } from '../pages/bd-add-essencia/bd-add-essencia';
 import { PrincipalPage } from '../pages/principal/principal';
+import { CheckEssenciaPage } from '../pages/check-essencia/check-essencia';
+import { ForumPage } from '../pages/forum/forum';
 
 
 

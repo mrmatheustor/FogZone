@@ -20,6 +20,7 @@ export class EssenciasPage {
 
   essencias: any;
   similarSabor: any;
+  sabor: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public essenciasApi: EssenciasApi, public loadingController: LoadingController) {
     this.essencias = this.navParams.data;
@@ -28,6 +29,17 @@ export class EssenciasPage {
   ionViewDidLoad() {
     console.log('ionViewDidLoad EssenciasPage e ', this.essencias.color);
     this.similarSabor = _.chain(this.essenciasApi.getMarcas).filter(es => es.type == this.essencias.type).value();
+
+    let loader = this.loadingController.create({content: 'Carregando...'});
+    
+    loader.present().then(() => {
+
+      this.essenciasApi.getSabor(this.essencias.id).then(data => {
+        this.sabor = data;
+        console.log("Loaded.", data);
+        loader.dismiss();
+      });
+    });
 
   }
 

@@ -12,17 +12,17 @@ export class EssenciasApi {
     // constructor(private http: Http) {
 
     // }
+    
 
     getMarcas() {
         return new Promise(resolve => {
-            this.http.get(`${this.baseUrl}/colors.json`).subscribe(data =>  resolve(data.json()))
+            this.http.get(`${this.baseUrl}/tournaments.json`).subscribe(data => resolve(data.json()))
         });
     }
-    
 
-    getTournaments() {
+    getSabor(saborid) {
         return new Promise(resolve => {
-            this.http.get(`${this.baseUrl}/tournaments.json`).subscribe(data => resolve(data.json()))
+            this.http.get(`${this.baseUrl}/tournaments-data/${saborid}/sabor.json`).subscribe(data => resolve(data.json()))
         });
     }
 

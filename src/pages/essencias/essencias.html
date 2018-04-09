@@ -16,13 +16,13 @@
 <ion-content padding>
   <ion-card>
     <ion-card-header>
-      {{essencias.type}}
+      {{essencias.name}}
     </ion-card-header>
     <ion-list>
-        <button ion-item (click)="infoEssence($event, t)">
+        <button ion-item *ngFor="let flavor of sabor"(click)="infoEssence($event, t)">
             <ion-icon name="cart" item-start ></ion-icon>
-            {{essencias.color}}
-          </button>
+            {{flavor.nome}}
+        </button>
     </ion-list>
   </ion-card>
 </ion-content>

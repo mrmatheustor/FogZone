@@ -17,15 +17,19 @@ import { AddEssenciaPage } from '../pages/add-essencia/add-essencia';
 import { BdEssenciaPage } from '../pages/bd-essencia/bd-essencia';
 import { BdAddEssenciaPage } from '../pages/bd-add-essencia/bd-add-essencia';
 import { PrincipalPage } from '../pages/principal/principal';
+import { CheckEssenciaPage } from '../pages/check-essencia/check-essencia';
+import { ForumPage } from '../pages/forum/forum';
 
 @NgModule({
   declarations: [
     MyApp,
     MarcasPage,
     LoginPage,
+    CheckEssenciaPage,
     InfoEssenciasPage,
     AddEssenciaPage,
     BdEssenciaPage,
+    ForumPage,
     BdAddEssenciaPage,
     PrincipalPage,
     InicioPage,
@@ -41,9 +45,11 @@ import { PrincipalPage } from '../pages/principal/principal';
     MyApp,
     MarcasPage,
     LoginPage,
+    CheckEssenciaPage,
     InfoEssenciasPage,
     AddEssenciaPage,
     BdEssenciaPage,
+    ForumPage,
     BdAddEssenciaPage,
     PrincipalPage,
     InicioPage,

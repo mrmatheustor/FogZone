@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, LoadingController } from 'ionic-angular';
 import { EssenciasPage } from '../essencias/essencias';
 import { MarcasPage } from '../marcas/marcas';
 import { AddEssenciaPage } from '../add-essencia/add-essencia';
 import { BdEssenciaPage } from '../bd-essencia/bd-essencia';
+import { EssenciasApi } from '../../shared/essencias-api';
 
 /**
  * Generated class for the InicioPage page.
@@ -19,11 +20,12 @@ import { BdEssenciaPage } from '../bd-essencia/bd-essencia';
 })
 export class InicioPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public loadingController:LoadingController, public essenciasApi:EssenciasApi) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad InicioPage');
+    
   }
 
   goToFavs(){

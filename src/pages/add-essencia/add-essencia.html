@@ -15,11 +15,10 @@
 
 <ion-content padding>
 
-  <ion-card>
-    <ion-card-header>Marca da Essência</ion-card-header>
-  <ion-item>
-    <ion-label>Nome da Essência</ion-label>
-    <ion-checkbox color="dark" checked="false"></ion-checkbox>
-  </ion-item>
-</ion-card>
+  <ion-list>
+  <button ion-item *ngFor= "let box of sabor" (click) = "goToCheck($event, box)">
+    {{box.name}}
+  </button>
+</ion-list>
+
 </ion-content>

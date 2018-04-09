@@ -22,48 +22,62 @@ export class MarcasPage {
   teste: any;
   similarEssence: any;
   string : "primary";
+  Adalya: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public essenciasApi: EssenciasApi, public loadingController: LoadingController) {
 
-    
-      this.teste =  [
-        {
-        Adalya:{
-            Nome: "Baku Nights",
-            Marca: "Adalya"
-          },
-        },{
-          Adalya: {
-            Nome: "Love 66",
-            Marca: "Adalya"
-          },
-        },
-        {
-          Adalya:{
-            Nome: "Wind of Amazon",
-            Marca: "Adalya"
-          },
-        },
-          {
-          Adalya:{
-            Nome: "The Perfect Storm",
-            Marca: "Adalya"
-          },
-        },
-          {
-          Adalya:{
-            Nome: "Lemon cocktail ",
-            Marca: "Adalya"
-          },
-        },
-          {
-          Adalya:{
-            Nome: "Summer night",
-            Marca: "Adalya"
-          },
-        }
-       ];
-  }
+
+    // this.Adalya =  [
+    //   {Nome: ["Baku Nights","Love 66","Wind of Amazon", "The Perfect Storm","Lemon cocktail", "Summer night"], Marca: "Adalya" }
+    //   ];
+    // this.Adalya =  [
+    //   {Nome: "Baku Nights", Marca: "Adalya" },
+    //   {Nome: "Love 66", Marca: "Adalya"},
+    //   {Nome: "Wind of Amazon",Marca: "Adalya"},
+    //   {Nome: "The Perfect Storm",Marca: "Adalya"},
+    //   { Nome: "Lemon cocktail ",Marca: "Adalya"},
+    //   {Nome: "Summer night",Marca: "Adalya"}
+      
+    //  ];
+
+    // this.teste =  [
+    //   {
+    //   Adalya:{
+    //       Nome: "Baku Nights",
+    //       Marca: "Adalya"
+    //     },
+    //   },{
+    //     Adalya: {
+    //       Nome: "Love 66",
+    //       Marca: "Adalya"
+    //     },
+    //   },
+    //   {
+    //     Adalya:{
+    //       Nome: "Wind of Amazon",
+    //       Marca: "Adalya"
+    //     },
+    //   },
+    //     {
+    //     Adalya:{
+    //       Nome: "The Perfect Storm",
+    //       Marca: "Adalya"
+    //     },
+    //   },
+    //     {
+    //     Adalya:{
+    //       Nome: "Lemon cocktail ",
+    //       Marca: "Adalya"
+    //     },
+    //   },
+    //     {
+    //     Adalya:{
+    //       Nome: "Summer night",
+    //       Marca: "Adalya"
+    //     }
+    //   }
+    //  ];
+      }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad MarcasPage');
