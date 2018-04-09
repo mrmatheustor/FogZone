@@ -19,10 +19,50 @@ import * as _ from 'lodash';
 export class MarcasPage {
 
   marcae: any;
+  teste: any;
   similarEssence: any;
   string : "primary";
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public essenciasApi: EssenciasApi, public loadingController: LoadingController) {
+
+    
+      this.teste =  [
+        {
+        Adalya:{
+            Nome: "Baku Nights",
+            Marca: "Adalya"
+          },
+        },{
+          Adalya: {
+            Nome: "Love 66",
+            Marca: "Adalya"
+          },
+        },
+        {
+          Adalya:{
+            Nome: "Wind of Amazon",
+            Marca: "Adalya"
+          },
+        },
+          {
+          Adalya:{
+            Nome: "The Perfect Storm",
+            Marca: "Adalya"
+          },
+        },
+          {
+          Adalya:{
+            Nome: "Lemon cocktail ",
+            Marca: "Adalya"
+          },
+        },
+          {
+          Adalya:{
+            Nome: "Summer night",
+            Marca: "Adalya"
+          },
+        }
+       ];
   }
 
   ionViewDidLoad() {
